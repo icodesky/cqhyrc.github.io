@@ -1,359 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HUAYU导航</title>
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background-color: #f7f7f7;
-      }
-      .container {
-        background-color: #fff;
-      }
-      .container-header {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 700;
-        height: 40px;
-        padding-left: 10px;
-      }
-      .container-body {
-        display: flex;
-        border-top: 1px solid #dfdfdf;
-        padding: 20px 10px 0 10px;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-      .container div {
-        display: flex;
-      }
-      .item-block {
-        border: 1px solid #dfdfdf;
-        flex-direction: column;
-        height: 160px;
-        width: 24%;
-        margin-bottom: 20px;
-        margin-right: 10px;
-      }
-      a:link {
-        color: #000;
-        text-decoration: none;
-      }
-      a:visited {
-        color: #000;
-        text-decoration: none;
-      }
-      .item-top {
-        height: 80px;
-        padding: 20px;
-      }
-      .item-logo {
-        width: 60px;
-        height: 60px;
-        margin-right: 20px;
-      }
-      .item-logo img {
-        width: 100%;
-        height: 100%;
-      }
-      .item-body {
-        flex-direction: column;
-        width: 79%;
-      }
-      .item-bottom {
-        height: 40px;
-        justify-content: space-around;
-        align-items: center;
-        color: #888;
-        background-color: #f7f7f7;
-        font-size: 13px;
-      }
-      .title {
-        font-size: 16px;
-        font-weight: 700;
-        padding-bottom: 10px;
-      }
-      .notice {
-        font-size: 12px;
-        color: #888;
-      }
-      .divider {
-        height: 20px;
-        width: 1px;
-        background-color: #dfdfdf;
-      }
-    </style>
-  </head>
-  <body style="padding: 10px">
-    <div class="container">
-      <div class="container-header">自研业务系统</div>
-      <div class="container-body">
-        <div class="item-block">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/xyj.png" /></div>
-            <div class="item-body">
-              <span class="title">华宇小宇家</span>
-              <span class="notice">小宇家·全民营销后台管理系统</span>
-            </div>
-          </div>
-          <div class="item-bottom">
-            <div onclick='window.open("http://47.111.79.118:9188/")'>
-              测试环境
-            </div>
-            <div class="divider"></div>
-            <div onclick='window.open("https://yxjadmin.cqhyrc.com.cn/")'>
-              正式环境
-            </div>
-            <div class="divider"></div>
-            <div
-              onclick='window.open("https://www.yuque.com/books/share/f3d006bc-b897-4231-9949-73e14a6f81d3")'
-            >
-              帮助文档
-            </div>
-          </div>
-        </div>
-        <div class="item-block">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/default.png" /></div>
-            <div class="item-body">
-              <span class="title">会议·日程</span>
-              <span class="notice">会议门户·日程门户</span>
-            </div>
-          </div>
-          <div class="item-bottom">
-            <div
-              onclick='window.open("http://61.128.134.135:10101/user/login")'
-            >
-              测试环境
-            </div>
-            <div class="divider"></div>
-            <div onclick="window.open('https://#)">正式环境</div>
-            <div class="divider"></div>
-            <div onclick='window.open("https://#")'>帮助文档</div>
-          </div>
-        </div>
-        <div class="item-block">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/default.png" /></div>
-            <div class="item-body">
-              <span class="title">会议·日程-后台管理</span>
-              <span class="notice">会议门户·日程门户-后台管理</span>
-            </div>
-          </div>
-          <div class="item-bottom">
-            <div
-              onclick='window.open("http://61.128.134.135:10102/user/login")'
-            >
-              测试环境
-            </div>
-            <div class="divider"></div>
-            <div onclick="window.open('https://#‘)">正式环境</div>
-            <div class="divider"></div>
-            <div onclick='window.open("https://#")'>帮助文档</div>
-          </div>
-        </div>
-        <div class="item-block">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/default.png" /></div>
-            <div class="item-body">
-              <span class="title">华宇资料库-系统管理</span>
-              <span class="notice">用户、角色权限管理</span>
-            </div>
-          </div>
-          <div class="item-bottom">
-            <div onclick='window.open("http://61.128.134.135:10110/")'>
-              测试环境
-            </div>
-            <div class="divider"></div>
-            <div onclick='window.open("http://47.111.79.118:3011/")'>
-              正式环境
-            </div>
-            <div class="divider"></div>
-            <div
-              onclick='window.open("https://www.yuque.com/books/share/ec824586-8d48-48d9-af69-0f75c943f7e1")'
-            >
-              帮助文档
-            </div>
-          </div>
-        </div>
-        <div class="item-block">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/default.png" /></div>
-            <div class="item-body">
-              <span class="title">华宇资料库-资料维护</span>
-              <span class="notice">资料上传管理</span>
-            </div>
-          </div>
-          <div class="item-bottom">
-            <div onclick='window.open("http://61.128.134.135:10111/")'>
-              测试环境
-            </div>
-            <div class="divider"></div>
-            <div onclick='window.open("http://47.111.79.118:3012/")'>
-              正式环境
-            </div>
-            <div class="divider"></div>
-            <div
-              onclick='window.open("https://www.yuque.com/books/share/ec824586-8d48-48d9-af69-0f75c943f7e1")'
-            >
-              帮助文档
-            </div>
-          </div>
-        </div>
-        <div class="item-block">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/default.png" /></div>
-            <div class="item-body">
-              <span class="title">华宇资料库</span>
-              <span class="notice">资料库前端查询浏览页面</span>
-            </div>
-          </div>
-          <div class="item-bottom">
-            <div onclick='window.open("http://47.111.79.118:3012/public")'>
-              华宇资料库
-            </div>
-            <div class="divider"></div>
-            <div onclick='window.open("http://47.111.79.118:3012/finance")'>
-              财务资料库
-            </div>
-            <div class="divider"></div>
-            <div
-              onclick='window.open("http://47.111.79.118:3012/product")'
-            >
-              研发产品线
-            </div>
-          </div>
-        </div>
-        <div class="item-block">
-          <a href="http://tax.cqhyrc.com.cn/user/login" target="_blank"
-            ><div class="item-top">
-              <div class="item-logo"><img src="img/mingpian.png" /></div>
-              <div class="item-body">
-                <span class="title">税务管理</span>
-                <span class="notice">华宇税务管理系统</span>
-              </div>
-            </div></a
-          >
-          <div class="item-bottom"><div>帮助文档</div></div>
-        </div>
+    
+    <head>
+        <meta charset="UTF-8" />
+        <title>ICODE_ISKY的工具箱 | ICODE_ISKY的工具箱提供好用、易用的工具，还在不断添加中，欢迎访问！</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <style>body, html { margin: 0; padding: 0; height: 100%; background-color: #f7f7f7; } .container { background-color: #fff; } .container-header { display: flex; align-items: center; font-size: 14px; font-weight: 700; height: 40px; padding-left: 10px; } .container-body { display: flex; border-top: 1px solid #dfdfdf; padding: 20px 10px 0 10px; flex-direction: row; flex-wrap: wrap; } .container div { display: flex; } .item-block { border: 1px solid #dfdfdf; flex-direction: column; height: 160px; width: 24%; margin-bottom: 20px; margin-right: 10px; } a:link { color: #000; text-decoration: none; } a:visited { color: #000; text-decoration: none; } .item-top { height: 80px; padding: 20px; } .item-logo { width: 60px; height: 60px; margin-right: 20px; } .item-logo img { width: 100%; height: 100%; } .item-body { flex-direction: column; width: 79%; } .item-bottom { height: 40px; justify-content: space-around; align-items: center; color: #888; background-color: #f7f7f7; font-size: 13px; } .title { font-size: 16px; font-weight: 700; padding-bottom: 10px; } .notice { font-size: 12px; color: #888; } .divider { height: 20px; width: 1px; background-color: #dfdfdf; }</style></head>
 
-
-        <div class="item-block">
-          <a href="https://bctest.cqhyrc.com.cn/hy/manage/login" target="_blank"
-            ><div class="item-top">
-              <div class="item-logo"><img src="img/mingpian.png" /></div>
-              <div class="item-body">
-                <span class="title">华宇名片</span>
-                <span class="notice">华宇名片小程序新闻维护</span>
-              </div>
-            </div></a
-          >
-          <div class="item-bottom"><div>帮助文档</div></div>
-        </div>
-
-<!--  BEGIN -->
-     <div class="item-block">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/default.png" /></div>
-            <div class="item-body">
-              <span class="title">BPM平台</span>
-              <span class="notice">炎黄BPM平台</span>
-            </div>
-          </div>
-          <div class="item-bottom">
-            <div onclick='window.open("http://dev.hyxfsg.com/portal/")'>
-              开发环境
-            </div>
-            <div class="divider"></div>
-            <div onclick='window.open("http://bpm.cqhyrc.com.cn/")'>
-              正式环境
-            </div>
-            <div class="divider"></div>
-            <div
-              onclick='window.open("https://#")'
-            >
-              帮助文档
-            </div>
-          </div>
-        </div>
-        
-        <div class="item-block">
-          <div class="item-top">
-            <div class="item-logo"><img src="img/default.png" /></div>
-            <div class="item-body">
-              <span class="title">华宇OA</span>
-              <span class="notice">华宇集团OA协同管理软件</span>
-            </div>
-          </div>
-          <div class="item-bottom">
-            <div onclick='window.open("http://61.128.134.135:9124/seeyon/")'>
-              测试环境
-            </div>
-            <div class="divider"></div>
-            <div onclick='window.open("http://oa.cqhyrc.com.cn/seeyon/")'>
-              正式环境
-            </div>
-            <div class="divider"></div>
-            <div
-              onclick='window.open("https://#")'
-            >
-              帮助文档
-            </div>
-          </div>
-        </div>
-<!--  END -->
-</div>
-</div>
+    <body style="padding: 10px">
+        <div class="container">
+            <div class="container-header">| 协同办公</div>
+            <div class="container-body">
                 
-    <div class="container">
-      <div class="container-header">在线平台</div>
-      <div class="container-body">
-        <div class="item-block">
-          <a href="https://www.yuque.com" target="_blank"
-            ><div class="item-top">
-              <div class="item-logo"><img src="img/yq.png" /></div>
-              <div class="item-body">
-                <span class="title">语雀</span>
-                <span class="notice">专业云端知识库</span>
-              </div>
-            </div></a
-          >
-          <div class="item-bottom"><div>帮助文档</div></div>
-        </div>
-        <div class="item-block">
-          <a href="https://demo.spug.dev" target="_blank"
-            ><div class="item-top">
-              <div class="item-logo"><img src="img/lanhu.svg" /></div>
-              <div class="item-body">
-                <span class="title">蓝湖</span>
-                <span class="notice">高效的产品设计协作平台</span>
-              </div>
-            </div></a
-          >
-          <div class="item-bottom"><div>帮助文档</div></div>
-        </div>
-        
                 <div class="item-block">
-          <a href="https://dh.woshipm.com/" target="_blank"
-            ><div class="item-top">
-              <div class="item-logo"><img src="img/pmdhlogo.png" /></div>
-              <div class="item-body">
-              <span class="title">阿猫阿狗导航</span>
-              <span class="notice">产品经理导航 | 运营导航 | 设计师导航</span>
-              </div>
-            </div></a
-          >
-          <div class="item-bottom"><div>帮助文档</div></div>
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">OA</span>
+                            <span class="notice">新一代智慧协同运营平台</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://oa.cqhyrc.com.cn/seeyon/&quot;)">正式环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://61.128.134.135:9124/seeyon/&quot;)">测试环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://support.seeyon.com/&quot;)">帮助文档</div></div>
+                </div>
+                                
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">BPM</span>
+                            <span class="notice">AWS PaaS为开发者和非开发者构建下一代企业应用提供了完整、专业、低代码的基础设施工具， 包括BPM（Business Process Management，业务流程管理） 的全部能力、 应用建模、移动管理、开放API和复杂后端集成服务。</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://bpm.cqhyrc.com.cn/&quot;)">正式环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://dev.hyxfsg.com/portal/&quot;)">测试环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://www.awspaas.com/support&quot;)">帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">日程中心</span>
+                            <span class="notice">日程中心包含会议管理，日程管理，领导督办管理</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://calendar.cqhyrc.com.cn:10301/user/login/&quot;)">正式环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://61.128.134.135:10101/user/login/&quot;)">测试环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://#&quot;)">帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/xyj.png" /></div>
+                        <div class="item-body">
+                            <span class="title">营销物品管理系统</span>
+                            <span class="notice">营销物品管理系统，原华宇小宇家</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;https://yxjadmin.cqhyrc.com.cn/&quot;)">正式环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://47.111.79.118:9188/&quot;)">测试环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://www.yuque.com/books/share/f3d006bc-b897-4231-9949-73e14a6f81d3&quot;)">帮助文档</div></div>
+                </div>
+
+            </div>
         </div>
         
-        
-      </div>
-    </div>
-  </body>
+        <div class="container">
+            <div class="container-header">| 报表中心</div>
+            <div class="container-body">
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/xyj.png" /></div>
+                        <div class="item-body">
+                            <span class="title">物资报表</span>
+                            <span class="notice">易点物资管理系统BI报表（推送频率：每月）</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://61.128.134.135:9222/user/login/&quot;)">点击访问</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://#&quot;)">帮助文档</div></div>
+                </div>
+                
+                <div class="item-block">
+                    <a href="http://biadmin.cqhyrc.com.cn/bi/ehr/staff" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/default.png" /></div>
+                            <div class="item-body">
+                                <span class="title">人员变动报表</span>
+                                <span class="notice">查看当年华宇集团人员变动（入离职、升职加薪）信息</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+                
+                <div class="item-block">
+                    <a href="http://61.128.134.135:6098/" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/default.png" /></div>
+                            <div class="item-body">
+                                <span class="title">地产集团货值报表</span>
+                                <span class="notice">地产集团货值报表</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-header">自研业务系统</div>
+            <div class="container-body">
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">法人管理系统</span>
+                            <span class="notice">法人|印章管理系统</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://61.128.134.135:10113&quot;)">测试环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://61.128.134.135:10113/legalPerson/leaderReport&quot;)">法人报表（测试)</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://#&quot;)">帮助文档</div></div>
+                </div>
+
+
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">合同标准化管理系统</span>
+                            <span class="notice">华宇&middot;合同标准化管理系统</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://61.128.134.135:10114/&quot;)">测试环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://cont.cqhyrc.com.cn&quot;)">正式环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://#&quot;)">帮助文档</div></div>
+                </div>
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">COMMON用户中心</span>
+                            <span class="notice">自研系统用户、角色统一管理平台</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://61.128.134.135:10110/&quot;)">测试环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://61.128.134.135:3011/&quot;)">正式环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://www.yuque.com/books/share/ec824586-8d48-48d9-af69-0f75c943f7e1&quot;)">帮助文档</div></div>
+                </div>
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">华宇资料库-资料维护</span>
+                            <span class="notice">资料上传管理</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://61.128.134.135:10111/&quot;)">测试环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://47.111.79.118:3012/&quot;)">正式环境</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://www.yuque.com/books/share/ec824586-8d48-48d9-af69-0f75c943f7e1&quot;)">帮助文档</div></div>
+                </div>
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">华宇资料库</span>
+                            <span class="notice">资料库前端查询浏览页面</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;http://47.111.79.118:3012/public&quot;)">华宇资料库</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://47.111.79.118:3012/finance&quot;)">财务资料库</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;http://47.111.79.118:3012/product&quot;)">研发产品线</div></div>
+                </div>
+                <div class="item-block">
+                    <a href="http://tax.cqhyrc.com.cn/user/login" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/mingpian.png" /></div>
+                            <div class="item-body">
+                                <span class="title">税务管理</span>
+                                <span class="notice">华宇税务管理系统</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+                <div class="item-block">
+                    <a href="https://bctest.cqhyrc.com.cn/hy/manage/login" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/mingpian.png" /></div>
+                            <div class="item-body">
+                                <span class="title">华宇名片</span>
+                                <span class="notice">华宇名片小程序新闻维护</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <a href="http://hyxzfyadmin.cqhyrc.com.cn/user/login" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/mingpian.png" /></div>
+                            <div class="item-body">
+                                <span class="title">行政费用管理</span>
+                                <span class="notice">行政部费用管理系统后台</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <a href="http://61.128.134.135:10313/user/login" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/mingpian.png" /></div>
+                            <div class="item-body">
+                                <span class="title">IT服务后台</span>
+                                <span class="notice">IT服务、携程反馈后台</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <a href="http://logsadmin.cqhyrc.com.cn/" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/default.png" /></div>
+                            <div class="item-body">
+                                <span class="title">华宇日志平台</span>
+                                <span class="notice">报表访问日志记录</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <div class="item-top">
+                        <div class="item-logo">
+                            <img src="img/default.png" /></div>
+                        <div class="item-body">
+                            <span class="title">业如供应链DEV</span>
+                            <span class="notice">业如供应链开发环境</span></div>
+                    </div>
+                    <div class="item-bottom">
+                        <div onclick="window.open(&quot;https://test.yerusc.com/&quot;)">官方网站</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://testbp.yerusc.com/platform/login/&quot;)">后台管理</div>
+                        <div class="divider"></div>
+                        <div onclick="window.open(&quot;https://#&quot;)">帮助文档</div></div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-header">在线平台</div>
+            <div class="container-body">
+                <div class="item-block">
+                    <a href="https://www.yuque.com" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/yq.png" /></div>
+                            <div class="item-body">
+                                <span class="title">语雀</span>
+                                <span class="notice">专业云端知识库</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+                <div class="item-block">
+                    <a href="https://lanhuapp.com" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/lanhu.svg" /></div>
+                            <div class="item-body">
+                                <span class="title">蓝湖</span>
+                                <span class="notice">高效的产品设计协作平台</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+                <div class="item-block">
+                    <a href="https://open.tianyancha.com" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="https://pp.myapp.com/ma_icon/0/icon_42259478_1615967387/96" /></div>
+                            <div class="item-body">
+                                <span class="title">天眼查开放平台</span>
+                                <span class="notice">全方位高性能数据接口</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+                <div class="item-block">
+                    <a href="https://dh.woshipm.com/" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/pmdhlogo.png" /></div>
+                            <div class="item-body">
+                                <span class="title">阿猫阿狗导航</span>
+                                <span class="notice">产品经理导航 | 运营导航 | 设计师导航</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <a href="https://icredit.jd.com/" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="img/lanjing.png"/></div>
+                            <div class="item-body">
+                                <span class="title">京东蓝鲸征信</span>
+                                <span class="notice">京东蓝鲸征信_了解企业从蓝鲸开始_企业信息查询_公司查询_工商查询_企业信用信息系统</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <a href="https://rrkee.com/" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="https://rrkee.com/lib/cn/logo.png"/></div>
+                            <div class="item-body">
+                                <span class="title">人人客搜索导航</span>
+                                <span class="notice">人人客搜索导航 rrkee.com</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+
+                <div class="item-block">
+                    <a href="http://tool.liumingye.cn/" target="_blank">
+                        <div class="item-top">
+                            <div class="item-logo">
+                                <img src="https://ae01.alicdn.com/kf/H1e9c800bdc4840d48bee31acfdb41f06J.jpg"/></div>
+                            <div class="item-body">
+                                <span class="title">刘明野的工具箱</span>
+                                <span class="notice">刘明野的工具箱提供好用、易用的工具,还在不断添加中，欢迎访问!</span></div>
+                        </div>
+                    </a>
+                    <div class="item-bottom">
+                        <div>帮助文档</div></div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </body>
+
 </html>
